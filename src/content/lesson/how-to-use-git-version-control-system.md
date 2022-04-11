@@ -18,13 +18,15 @@ status: "published"
 
 ## GIT is a MUST!
 
-GIT is a great technology, please take time to learn it.  DON’T procrastinate because you cannot avoid it.  You will be using it every day, several times a day. So you’d better learn and be comfortable with it.
+GIT is a great technology, please take time to learn it.  DON’T procrastinate because you cannot avoid it.  You will be using it everyday, several times a day. So you’d better learn and be comfortable with it.
+
 
 GIT is more than just a "set of commands" that you have to learn.  Throughout the years, we have learned that the best way to teach GIT is by understanding the concepts and meaning of the technology first rather than just giving you a list of commands to use.
 
 ## Why Bother to use GIT?
 
-Being the only developer in a project is a [utopia](http://www.thefreedictionary.com/Utopic).  Normally, you collaborate with other developers, and, without GIT, that becomes a big problem.  That’s why we need a *repository* of information to centralize and manage changes.  With a *repository* we are addressing the following:
+Being the only developer in a project is a [utopia](http://www.thefreedictionary.com/Utopic).  Normally, you collaborate with other developers and without GIT that
+becomes a big problem.  That’s why we need a *repository* of information to centralize and manage changes.  With a *repository* we are addressing the following:
 
 + If two developers work on **the same page (file)**, GIT will compare both versions and will *(try to)* merge them into a new one.
 + Downloading and integrating someone else’s code (or any code) into your project without much hassle and doing so automatically.
@@ -73,7 +75,7 @@ At the beginning, a project always has one commit object with no parents.  This 
 
 The heads of the repository are like the "revision history of the project."  A revision history is a list of commit objects that altogether contain all the changes that you and your other team members have made to the project files.
 
-Every time you make a new commit, the head will move to that new commit.  This way you are able to have access to the entire project history of commits.
+Everytime you make a new commit, the head will move to that new commit.  This way you are able to have access to the entire project history of commits.
 
 You can **move the head** if you want.  It does not necessarily have to always be the last commit, but you must remember that you can only review commits that came before the commit to which the head is pointing at.  **Commits made after the commit to which the head is pointing at are not possible to be reviewed.**
 
@@ -90,7 +92,7 @@ Example: Let’s say that you are starting to develop the "Login" feature/functi
 
 ![how to use git](../../assets/images/09294580-51b9-4591-9c2c-57c729ad02d1.gif)
 
-> :point_up:**Note on Terminology:** The terms "branch" and "head" are nearly synonymous in GIT.  Every branch is represented by one head, and every head represents one branch.  Sometimes, "branch" will be used to refer to a head and the entire history of commits preceding that head, whereas "head" will be used to refer exclusively to a single commit object (the most recent commit in the branch).
+> :point_up:**Note on Terminology:** The terms "branch" and "head" are nearly synonymous in GIT.  Every branch is represented by one head, and every head represents one branch.  Sometimes, "branch" will be used to refer to a head and the entire history of commits preceding that head, where as "head" will be used to refer exclusively to a single commit object (the most recent commit in the branch).
 
  ## Starting a New Repo** `git init`
 
@@ -126,7 +128,7 @@ Other commands that are useful at this point:
 + `git diff` shows the difference between HEAD and the current project state.  With the --cached option, it compares added files against HEAD; otherwise it compares files not yet added.*
 + `git mv` and `git rm` mark files to be moved (renamed) and removed, respectively, much like `git add`.
 
-My personal workflow usually looks this:  I first do some programming, and, afterwards, I end up updating some files, then I run the following commands:
+My personal workflow usually looks this:  I first do some programming and afterwards I end up updating some files, then I run the following commands:
 
 ```bash
 git status //to see what files I changed.
@@ -315,7 +317,7 @@ This would do the following:
   
 A **remote repository reference** is an alias GIT uses to refer to the remote repository.  Generally it will be *origin*.  Among other things, GIT internally associates the *remote-specification* with the remote repository reference, so you will never need to refer to the original repository again.
 
-From now one, you will be able to say `origin` instead of `git@github.com:alesanchezr/myfirstrepo.git`.
+From now on, you will be able to say `origin` instead of `git@github.com:alesanchezr/myfirstrepo.git`.
 
 A branch that **tracks** a remote branch retains an internal reference to the remote branch.  This is a convenience that allows you to avoid typing the name of the remote branch in many situations, as will be described below.
 
